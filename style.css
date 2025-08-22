@@ -1,0 +1,238 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #090909;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d6d6d7;
+    border-radius: 0.375rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.user-actions a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #090909;
+}
+
+.create-account-btn {
+    background-color: #3b49df;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1rem;
+}
+
+.left-sidebar ul, .right-sidebar .card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.375rem;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
+    color: #090909;
+    display: flex;
+    align-items: center;
+}
+
+.left-sidebar ul li a i {
+    margin-right: 0.5rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media a {
+    color: #090909;
+    font-size: 1.25rem;
+}
+
+.content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.375rem;
+}
+
+.content .card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+
+.content .card .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.content .card .card-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.content .card .card-header .user-info p {
+    margin: 0;
+}
+
+.content .card h2 a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.content .card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.content .card .card-footer .reactions,
+.content .card .card-footer .comments {
+    display: flex;
+    align-items: center;
+}
+
+.content .card .card-footer .reactions i,
+.content .card .card-footer .comments i {
+    margin-right: 0.5rem;
+}
+
+.content .card p {
+    color: #575757;
+}
+
+.right-sidebar .card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e5e5;
+}
+
+.right-sidebar .card h2 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.right-sidebar .card p {
+    color: #575757;
+    margin-bottom: 0.5rem;
+}
+
+.right-sidebar .card a {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.right-sidebar .card .create-account-btn {
+    background-color: #3b49df;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+.right-sidebar .card .login-btn {
+    background-color: #f5f5f5;
+    color: #090909;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+footer {
+    background-color: #e5e5e5;
+    color: #090909;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.article-content {
+    line-height: 1.6;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.tags a {
+    text-decoration: none;
+    color: #575757;
+    margin-right: 0.5rem;
+}
