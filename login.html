@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DEV Community Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="dark-mode-toggle-container">
+                <button id="dark-mode-toggle" class="dark-mode-toggle-btn"><i class="fas fa-moon"></i></button>
+            </div>
+            <h1>Join the DEV Community</h1>
+            <p>DEV Community is a community of 1,000,000+ developers.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+            <p class="text-center">Don't have an account? <a href="#">Create one</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+</html>

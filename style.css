@@ -3,7 +3,193 @@ body {
     margin: 0;
     background-color: #f5f5f5;
     color: #090909;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+body.dark-mode {
+    background-color: #090909;
+    color: #f5f5f5;
+}
+
+body.dark-mode .container {
+    background-color: #090909;
+    color: #f5f5f5;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+body.dark-mode .logo img {
+    filter: invert(1);
+}
+
+body.dark-mode .search-bar input {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    color: #f5f5f5;
+}
+
+body.dark-mode nav ul li a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .user-actions a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .create-account-btn {
+    background-color: #3b49df;
+    color: #fff;
+}
+
+body.dark-mode .left-sidebar ul, body.dark-mode .right-sidebar .card {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .left-sidebar ul li a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .social-media a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .content {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .content .card {
+    background-color: #1a1a1a;
+    border-color: #3a3a3a;
+}
+
+body.dark-mode .content .card h2 a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .content .card p {
+    color: #a5a5a5;
+}
+
+body.dark-mode .right-sidebar .card {
+    border-color: #3a3a3a;
+}
+
+body.dark-mode .right-sidebar .card h2 {
+    color: #f5f5f5;
+}
+
+body.dark-mode .right-sidebar .card p {
+    color: #a5a5a5;
+}
+
+body.dark-mode .right-sidebar .card .create-account-btn {
+    background-color: #3b49df;
+    color: #fff;
+}
+
+body.dark-mode .right-sidebar .card .login-btn {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.dark-mode-toggle-btn {
+    background: none;
+    border: none;
+    color: #090909;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+body.dark-mode .dark-mode-toggle-btn {
+    color: #f5f5f5;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .login-box {
+    background-color: #1a1a1a;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d6d6d7;
+    border-radius: 0.375rem;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b49df;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dark-mode-toggle-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.login-box .text-center a {
+    color: #3b49df;
+    text-decoration: none;
+}
+
+.login-box .text-center a:hover {
+    text-decoration: underline;
+}
+
 
 .container {
     max-width: 1280px;
@@ -235,4 +421,35 @@ footer {
     text-decoration: none;
     color: #575757;
     margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        margin: 1rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+
+    .login-box {
+        width: 90%;
+    }
 }
