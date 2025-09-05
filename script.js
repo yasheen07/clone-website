@@ -76,4 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         content.innerHTML = html;
     }
+
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mainNav = document.querySelector('.main-nav');
+    const userActions = document.querySelector('.user-actions');
+
+    hamburgerMenu.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        userActions.classList.toggle('active');
+    });
 });

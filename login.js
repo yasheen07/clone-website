@@ -27,16 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (valid) {
             // Dummy authentication
-            if (emailInput.value === 'test@example.com' && passwordInput.value === 'Password123!') {
-                window.location.href = 'index.html';
-            } else {
-                passwordError.textContent = 'Invalid email or password.';
-            }
+            window.location.href = 'index.html';
         }
     });
 
     function validateEmail(email) {
-        const re = /^(([^<>()[\\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return re.test(String(email).toLowerCase());
     }
 
