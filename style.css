@@ -414,7 +414,10 @@ body.dark-mode .divider {
     }
 
     .header-right .login-btn, .header-right .create-account-btn {
-        display: none;
+        display: block;
+        margin-left: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 
     main .container {
