@@ -136,6 +136,17 @@ header .container {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
+.mobile-nav-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #090909; /* Adjust color for dark mode later if needed */
+}
+
 .mobile-nav.active {
     left: 0;
 }
