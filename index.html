@@ -10,34 +10,46 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="#">
+            <div class="header-left">
+                <button class="hamburger-menu" aria-label="Open navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="logo">
                     <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
                 </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
             </div>
-            <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Posts</a></li>
-                    <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Tags</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <div class="user-actions">
-                <button id="dark-mode-toggle" class="dark-mode-toggle-btn"><i class="fas fa-moon"></i></button>
+            <div class="header-right">
+                <button id="dark-mode-toggle" class="dark-mode-toggle-btn" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <a href="login.html" class="login-btn">Log in</a>
-                <a href="#" class="create-account-btn">Create account</a>
+                <a href="register.html" class="create-account-btn">Create account</a>
             </div>
         </div>
     </header>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+        </div>
+    </nav>
     <main>
         <div class="container">
             <aside class="left-sidebar">
@@ -52,11 +64,11 @@
                     <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
                 <div class="social-media">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitch"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
                 </div>
             </aside>
             <div class="content">
@@ -64,25 +76,25 @@
             </div>
             <aside class="right-sidebar">
                 <div class="card">
-                    <h2>DEV Community</h2>
-                    <p>A constructive and inclusive social network for software developers. With you every step of your journey.</p>
-                    <a href="#" class="create-account-btn">Create account</a>
-                    <a href="#" class="login-btn">Log in</a>
+                    <h2><a href="https://dev.to" target="_blank" rel="noopener noreferrer">DEV Community</a> is a community of 1,791,248 amazing developers</h2>
+                    <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+                    <a href="register.html" class="create-account-btn">Create account</a>
+                    <a href="login.html" class="login-btn">Log in</a>
                 </div>
                 <div class="card">
-                    <h3>#discuss</h3>
-                    <p>What are your favorite developer tools?</p>
-                </div>
-                <div class="card">
-                    <h3>#watercooler</h3>
-                    <p>What's your favorite programming language?</p>
+                    <h3><a href="https://dev.to/listings">Listings</a></h3>
+                    <ul>
+                        <li><a href="#">Job opening: Senior Frontend Developer at TechCorp</a></li>
+                        <li><a href="#">Project collaboration: Open-source social media platform</a></li>
+                        <li><a href="#">Mentorship available: Experienced backend developer</a></li>
+                    </ul>
                 </div>
             </aside>
         </div>
     </main>
     <footer>
         <div class="container">
-            <p></p>
+            <p>DEV Community Clone - Built with ❤️</p>
         </div>
     </footer>
     <script src="script.js"></script>

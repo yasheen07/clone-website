@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - DEV Community Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="dark-mode-toggle-container">
+                <button id="dark-mode-toggle" class="dark-mode-toggle-btn"><i class="fas fa-moon"></i></button>
+            </div>
+            <h1>Create your account</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password-confirm">Confirm Password</label>
+                    <input type="password" id="password-confirm" name="password-confirm" required>
+                    <div class="error-message" id="password-confirm-error"></div>
+                </div>
+                <button type="submit" class="login-btn">Create account</button>
+            </form>
+            <p class="text-center">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+    <script src="register.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+</html>

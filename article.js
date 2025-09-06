@@ -18,5 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             content.innerHTML = html;
+
+            const reactionBtns = document.querySelectorAll('.reaction-btn');
+            const commentForm = document.querySelector('.comment-form');
+
+            reactionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    console.log(`Reacted with: ${btn.innerText}`);
+                });
+            });
+
+            commentForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const commentText = commentForm.querySelector('textarea').value;
+                console.log(`New comment: ${commentText}`);
+                commentForm.querySelector('textarea').value = '';
+            });
         });
 });

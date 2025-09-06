@@ -10,33 +10,60 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
-                </a>
+            <div class="header-left">
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
+                    </a>
+                </div>
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Posts</a></li>
-                    <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Tags</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <div class="user-actions">
-                <a href="#" class="login-btn">Log in</a>
-                <a href="#" class="create-account-btn">Create account</a>
+            <div class="header-right">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-actions">
+                    <button id="dark-mode-toggle" class="dark-mode-toggle-btn"><i class="fas fa-moon"></i></button>
+                    <a href="login.html" class="login-btn">Log in</a>
+                    <a href="#" class="create-account-btn">Create account</a>
+                </div>
             </div>
         </div>
+        <div class="search-bar-mobile">
+            <input type="text" placeholder="Search...">
+        </div>
     </header>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="container">
             <div class="content">
+            </div>
+            <div class="reactions-and-comments">
+                <div class="reactions">
+                    <button class="reaction-btn"><i class="fas fa-heart"></i> <span>Like</span></button>
+                    <button class="reaction-btn"><i class="fas fa-unicorn"></i> <span>Unicorn</span></button>
+                    <button class="reaction-btn"><i class="fas fa-bookmark"></i> <span>Save</span></button>
+                </div>
+                <div class="comments-section">
+                    <h2>Comments</h2>
+                    <div class="comment-form">
+                        <textarea placeholder="Add to the discussion"></textarea>
+                        <button>Submit</button>
+                    </div>
+                    <div class="comments-list">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -46,5 +73,6 @@
         </div>
     </footer>
     <script src="article.js"></script>
+    <script src="dark-mode.js"></script>
 </body>
 </html>
