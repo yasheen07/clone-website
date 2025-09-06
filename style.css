@@ -494,6 +494,11 @@ body.dark-mode .divider {
         display: none;
     }
 
+    .hamburger-menu {
+        display: block;
+        margin-right: 1rem;
+    }
+
     .header-right .login-btn, .header-right .create-account-btn {
         display: none;
     }
